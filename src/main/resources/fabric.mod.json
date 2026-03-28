@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "axolotl_fix",
+  "version": "1.0.0",
+  "name": "Axolotl Bucket Fix",
+  "description": "Fixes a crash when picking up axolotls in a bucket in Minecraft 26.1.",
+  "authors": [],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.fix.AxolotlFixClient"
+    ]
+  },
+  "mixins": [
+    "axolotl_fix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "26.1",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
